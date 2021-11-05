@@ -51,7 +51,21 @@ class Solution {
      * 快慢指针
      */
     public ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode fast = head;
+        int count = 0;
+        while (fast != null) { // 走到第k个(走k-1步)
+            count++;
+            if (count == k) break;
+            fast = fast.next;;
+        }
+        if (fast == null) return null; // 链表节点不够k
 
+        ListNode slow = head;
+        while (fast.next != null) { // 同步走,fast.next=null的时候,slow就是倒数第k个
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
