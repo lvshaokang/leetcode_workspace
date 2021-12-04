@@ -58,7 +58,7 @@ class Solution {
      * 看是否需要虚拟头结点
      *  结果链表为空链表(newhead->null)时,是否会有问题
      */
-    public ListNode reverseList(ListNode head) {
+    /*public ListNode reverseList(ListNode head) {
         if (head == null) {
             return null;
         }
@@ -70,6 +70,27 @@ class Solution {
             newHead = p;
             p = tmp;
         }
+        return newHead;
+    }*/
+
+    public ListNode reverseList(ListNode head) {
+        // 递归终止条件
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) { // 一个节点的情况
+            return head;
+        }
+
+        // 主体逻辑
+        /*
+         *                head -> 1 ->
+         *                           ↓
+         * newhead -> 5 -> 4 -> 3 -> 2 -> null
+         */
+        ListNode newHead = reverseList(head.next);
+        head.next.next = head; // 2 -> head
+        head.next = null;
         return newHead;
     }
 }
