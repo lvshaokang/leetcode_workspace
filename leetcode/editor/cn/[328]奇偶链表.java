@@ -49,7 +49,7 @@ class Solution {
         ListNode p = head;
         int count = 1;
         while(p != null) {
-            ListNode tmp = p.next;
+            ListNode tmp = p.next; // 因为,结果链表要操作指针p,p.next指针可能丢失,因此暂存p.next
             if (count % 2 == 1) { // 奇数
                 p.next = null;
                 oddTail.next = p;
