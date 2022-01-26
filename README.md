@@ -11,3 +11,4 @@
 
 ### 二叉查找树
 1. [剑指 Offer 54. 二叉搜索树的第k大节点](./leetcode/editor/cn/%5B剑指%20Offer%2022%5D链表中倒数第k个节点.java) 
+2. [538. 把二叉搜索树转换为累加树](./leetcode/editor/cn/%5B538%5D把二叉搜索树转换为累加树.java)
