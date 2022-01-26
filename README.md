@@ -10,5 +10,6 @@
 7. [98. 验证二叉搜索树](./leetcode/editor/cn/%5B98%5D验证二叉搜索树.java)
 
 ### 二叉查找树
-1. [剑指 Offer 54. 二叉搜索树的第k大节点](./leetcode/editor/cn/%5B剑指%20Offer%2022%5D链表中倒数第k个节点.java) 
+1. [剑指 Offer 54. 二叉搜索树的第k大节点](./leetcode/editor/cn/%5B剑指%20Offer%2054%5D二叉搜索树的第k大节点.java) 
 2. [538. 把二叉搜索树转换为累加树](./leetcode/editor/cn/%5B538%5D把二叉搜索树转换为累加树.java)
+3. [面试题 04.06](./leetcode/editor/cn/%5B面试题%2004.06%5D后继者.java)
