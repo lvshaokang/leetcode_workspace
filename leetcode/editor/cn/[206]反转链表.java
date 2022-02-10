@@ -66,8 +66,8 @@ class Solution {
         ListNode p = head;
         while (p != null) {
             ListNode tmp = p.next; // 因为,结果链表要操作指针p,p.next指针可能丢失,因此暂存p.next
-            p.next = newHead;
-            newHead = p;
+            p.next = newHead; // 第一次遍历, p.next = null, p.next -> Null
+            newHead = p; // newHead、p 指针后移
             p = tmp;
         }
         return newHead;
