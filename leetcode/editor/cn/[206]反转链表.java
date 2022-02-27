@@ -73,7 +73,26 @@ class Solution {
         return newHead;
     }*/
 
+    /**
+     * 带虚拟头结点的解法
+     */
     public ListNode reverseList(ListNode head) {
+        if (head == null) return null;
+        ListNode dummyHead = new ListNode(-1);
+        dummyHead.next = null;
+        ListNode cur = head; // cur -> 1
+        // 1 2 3 4 5
+        // -1 1 null
+        while (cur != null) {
+            ListNode next = cur.next; // 暂存 2
+            cur.next = dummyHead.next; // 1 -> null
+            dummyHead.next = cur; // -1 -> 1
+            cur = next; // cur -> 2
+        }
+        return dummyHead.next;
+    }
+
+    /*public ListNode reverseList(ListNode head) {
         // 递归终止条件
         if (head == null) {
             return null;
@@ -83,15 +102,15 @@ class Solution {
         }
 
         // 主体逻辑
-        /*
+        *//*
          *                head -> 1 ->
          *                           ↓
          * newhead -> 5 -> 4 -> 3 -> 2 -> null
-         */
+         *//*
         ListNode newHead = reverseList(head.next);
         head.next.next = head; // 2 -> head
         head.next = null;
         return newHead;
-    }
+    }*/
 }
 //leetcode submit region end(Prohibit modification and deletion)
