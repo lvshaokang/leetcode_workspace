@@ -8,6 +8,7 @@
 5. [226. 翻转二叉树（简单）](./leetcode/editor/cn/%5B226%5D翻转二叉树.java)
 6. [101. 对称二叉树（中等）](./leetcode/editor/cn/%5B101%5D对称二叉树.java)
 7. [98. 验证二叉搜索树（中等）](./leetcode/editor/cn/%5B98%5D验证二叉搜索树.java)
+8. [112. 路径总和（简单）](./leetcode/editor/cn/%5B112%5D路径总和.java)
 
 ### 二叉查找树
 1. [剑指 Offer 54. 二叉搜索树的第k大节点（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2054%5D二叉搜索树的第k大节点.java) 
@@ -24,3 +25,8 @@
 3. [剑指 Offer 36. 二叉搜索树与双向链表（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2036%5D二叉搜索树与双向链表.java)
 4. [面试题 04.03. 特定深度节点链表（中等）](./leetcode/editor/cn/%5B面试题%2004.03%5D特定深度节点链表.java)
 
+### 按照遍历结果反向构建二叉树
+1. [105. 从前序与中序遍历序列构造二叉树（中等）](./leetcode/editor/cn/%5B105%5D从前序与中序遍历序列构造二叉树.java)
+2. [889. 根据前序和后序遍历构造二叉树（中等）](./leetcode/editor/cn/%5B889%5D根据前序和后序遍历构造二叉树.java)
+3. [106. 从中序与后序遍历序列构造二叉树（中等）](./leetcode/editor/cn/%5B106%5D从中序与后序遍历序列构造二叉树.java)
+4. [剑指 Offer 33. 二叉搜索树的后序遍历序列（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2033%5D二叉搜索树的后序遍历序列.java)
