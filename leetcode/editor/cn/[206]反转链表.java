@@ -78,18 +78,18 @@ class Solution {
      */
     public ListNode reverseList(ListNode head) {
         if (head == null) return null;
-        ListNode dummyHead = new ListNode(-1);
-        dummyHead.next = null;
-        ListNode cur = head; // cur -> 1
+        ListNode newHead = new ListNode(-1);
+        newHead.next = null;
+        ListNode p = head; // cur -> 1
         // 1 2 3 4 5
         // -1 1 null
-        while (cur != null) {
-            ListNode next = cur.next; // 暂存 2
-            cur.next = dummyHead.next; // 1 -> null
-            dummyHead.next = cur; // -1 -> 1
-            cur = next; // cur -> 2
+        while (p != null) {
+            ListNode tmp = p.next; // 暂存 2
+            p.next = newHead.next; // 1 -> null
+            newHead.next = p; // -1 -> 1
+            p = tmp; // cur -> 2
         }
-        return dummyHead.next;
+        return newHead.next;
     }
 
     /*public ListNode reverseList(ListNode head) {
@@ -100,7 +100,6 @@ class Solution {
         if (head.next == null) { // 一个节点的情况
             return head;
         }
-
         // 主体逻辑
         *//*
          *                head -> 1 ->
