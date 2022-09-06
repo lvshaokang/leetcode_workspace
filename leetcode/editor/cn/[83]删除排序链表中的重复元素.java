@@ -49,9 +49,9 @@ class Solution {
         while (p != null) {
             ListNode tmp = p.next;
             if (p.val != tail.val) {
+                p.next = null;
                 tail.next = p;
                 tail = p;
-                p.next = null;
             }
             p = tmp;
         }
