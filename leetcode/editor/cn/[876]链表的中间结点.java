@@ -45,17 +45,33 @@
  * }
  */
 class Solution {
-    public ListNode middleNode(ListNode head) {
+    /*public ListNode middleNode(ListNode head) {
         if (head == null) {
             return null;
         }
 
-        List<ListNode> list = new ArrayList<>();
+        List<ListNode> list = new rrayList<>();
         while (head != null) {
             list.add(head);
             head = head.next;
         }
         return list.get(list.size()/2);
+    }*/
+
+    /**
+     * 快慢指针
+     */
+    public ListNode middleNode(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        ListNode fast = head, slow = head;
+        while (fast != null && fast.next != null) {
+           fast = fast.next.next;
+           slow = slow.next;
+        }
+        return slow;
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
