@@ -46,9 +46,9 @@
  */
 class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        ListNode dummyHead = new ListNode(-1);
-        dummyHead.next = head;
-        ListNode prev = dummyHead;
+        ListNode newHead = new ListNode(-1);
+        newHead.next = head;
+        ListNode prev = newHead;
         // 定位prev节点
         for (int i = 0; i < left - 1; i++) {
             prev = prev.next;
@@ -62,14 +62,15 @@ class Solution {
          * 1 -> 3 -> 2 -> 4 -> 5
          *
          */
-        ListNode cur = prev.next; // cur 待操作节点
+        ListNode p = prev.next; // cur 待操作节点
         for (int i = 0; i < right - left; i++) {
-            ListNode next = cur.next; // 暂存 next 节点 3
-            cur.next = next.next; // 2 -> 4
-            next.next = prev.next; // 3 -> 2
-            prev.next = next; // 1 -> 3
+            ListNode tmp = p.next; // 暂存 next 节点 3
+            // 必须保持这个顺序
+            p.next = tmp.next; // 2 -> 4
+            tmp.next = prev.next; // 3 -> 2
+            prev.next = tmp; // 1 -> 3
         }
-        return dummyHead.next;
+        return newHead.next;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

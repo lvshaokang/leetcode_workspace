@@ -14,6 +14,7 @@
 12. [160. 相交链表（简单）](./leetcode/editor/cn/%5B160%5D相交链表.java)
 13. [141. 环形链表（简单）](./leetcode/editor/cn/%5B141%5D环形链表.java) ✅
 14. [82. 删除排序链表中的重复元素 II（中等）](./leetcode/editor/cn/%5B82%5D删除排序链表中的重复元素%20II.java) ✅
+15. [92. 反转链表 II](./leetcode/editor/cn/%5B92%5D反转链表%20II.java) ✅
 
 
 ## 二叉树
