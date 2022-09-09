@@ -49,6 +49,7 @@ class Solution {
 
     /**
      * 快慢指针
+     *  快指针先走k-1步,然后快慢指针同步走,当快指针.next=null时,慢指针所指就是倒数第k个
      */
     public ListNode getKthFromEnd(ListNode head, int k) {
         ListNode fast = head;
