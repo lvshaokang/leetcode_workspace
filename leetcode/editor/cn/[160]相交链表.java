@@ -97,6 +97,10 @@
  * }
  */
 public class Solution {
+    /**
+     * 1) 求count
+     * 2) 长的链表先走 countA - countB 步,然后再一起同步走
+     */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null && headB == null) {
             return null;
