@@ -9,8 +9,8 @@
 7. [234. 回文链表（中等）](./leetcode/editor/cn/%5B234%5D回文链表.java) ✅
 8. [328. 奇偶链表（中等）](./leetcode/editor/cn/%5B328%5D奇偶链表.java) ✅
 9. [25. K 个一组翻转链表（困难）](./leetcode/editor/cn/%5B25%5DK%20个一组翻转链表.java) 需要练习 ❗
-10. [剑指 Offer 22. 链表中倒数第k个节点（简单）](./leetcode/editor/cn/%5B剑指%20Offer%2022%5D链表🌀中倒数第k个节点.java) ✅
-11. [19. 删除链表的倒数第 N 个结点（中等）]
+10. [剑指 Offer 22. 链表中倒数第k个节点（简单）](./leetcode/editor/cn/%5B剑指%20Offer%2022%5D链表中倒数第k个节点.java) ✅
+11. [19. 删除链表的倒数第 N 个结点（中等）](./leetcode/editor/cn/%5B19%5D删除链表的倒数第%20N%20个结点.java) ✅
 12. [160. 相交链表（简单）](./leetcode/editor/cn/%5B160%5D相交链表.java) ✅
 13. [141. 环形链表（简单）](./leetcode/editor/cn/%5B141%5D环形链表.java) ✅
 14. [82. 删除排序链表中的重复元素 II（中等）](./leetcode/editor/cn/%5B82%5D删除排序链表中的重复元素%20II.java) ✅
