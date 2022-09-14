@@ -1,6 +1,6 @@
 
 ## 链表
-1. [203. 移除链表元素（简单）](./leetcode/editor/cn/%5B203%5D移除链表元素.java) ✅
+1. [203. 移除链表元素（简单）](./leetcode/editor/cn/%5B203%5D移除链表元素.java) ✅尾插tail指针
 2. [876. 链表的中间结点（简单）](./leetcode/editor/cn/%5B876%5D链表的中间结点.java) ✅
 3. [83. 删除排序链表中的重复元素（简单）](./leetcode/editor/cn/%5B83%5D删除排序链表中的重复元素.java) ✅
 4. [剑指 Offer 25. 合并两个排序的链表（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2025%5D合并两个排序的链表.java) ✅
@@ -19,7 +19,7 @@
 
 ## 二叉树
 ### 二叉树前中后序遍历
-1. [144. 二叉树的前序遍历（简单）](./leetcode/editor/cn/%5B144%5D二叉树的前序遍历.java)
+1. [144. 二叉树的前序遍历（简单）](./leetcode/editor/cn/%5B144%5D二叉树的前序遍历.java) ✅
 2. [94. 二叉树的中序遍历（简单）](./leetcode/editor/cn/%5B94%5D二叉树的中序遍历.java)
 3. [145. 二叉树的后序遍历（简单）](./leetcode/editor/cn/%5B145%5D二叉树的后序遍历.java)
 4. [589. N 叉树的前序遍历（简单）]

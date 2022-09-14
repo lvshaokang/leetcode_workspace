@@ -88,9 +88,9 @@ class Solution {
     }*/
 
     /**
-     * 遍历
+     * stack 遍历
      */
-    /*public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null) return Collections.emptyList();
         List<Integer> result = new ArrayList();
         Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -106,25 +106,25 @@ class Solution {
             }
         }
         return result;
-    }*/
+    }
 
-    private class SFrame {
+    /*private class SFrame {
         public int status = 1;
         public TreeNode node = null;
         public SFrame(int status, TreeNode node) {
             this.status = status;
             this.node = node;
         }
-    }
+    }*/
 
-    List<Integer> result = new ArrayList<>();
+    /*List<Integer> result = new ArrayList<>();*/
 
     /**
      * status=1,表示要扩展左子树,将左子节点入栈
      * status=2,表示左子树扩展完了,要扩展右子树,将右子节点入栈
      * status=3,表示左右子树都扩展完了,出栈
      */
-    public List<Integer> preorderTraversal(TreeNode root) {
+    /*public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null) return result;
         Stack<SFrame> stack = new Stack<>();
         stack.push(new SFrame(1, root));
@@ -149,7 +149,7 @@ class Solution {
             }
         }
         return result;
-    }
+    }*/
 
 
 
