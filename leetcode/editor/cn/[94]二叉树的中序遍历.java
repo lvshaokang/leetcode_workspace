@@ -70,23 +70,23 @@
  */
 class Solution {
 
-    private class SFrame {
+    /*private class SFrame {
         private int status;
         private TreeNode node = null;
         public SFrame(int status, TreeNode node) {
             this.status = status;
             this.node = node;
         }
-    }
+    }*/
 
-    List<Integer> result = new ArrayList<>();
+    /*List<Integer> result = new ArrayList<>();*/
 
     /**
      * status=1,表示要扩展左子树,将左子节点入栈
      * status=2,表示左子树扩展完了,要扩展右子树,将右子节点入栈
      * status=3,表示左右子树都扩展完了,出栈
      */
-    public List<Integer> inorderTraversal(TreeNode root) {
+    /*public List<Integer> inorderTraversal(TreeNode root) {
         if (root == null) return result;
 
         Stack<SFrame> stack = new Stack<>();
@@ -112,6 +112,29 @@ class Solution {
             }
         }
         return result;
+    }*/
+
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+
+        if (root == null) return list;
+
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            if (cur != null) { // 模拟递归栈,不断遍历左子树
+                stack.push(cur);
+                cur = cur.left;
+            } else { // 左子树到头了,弹出栈顶元素,记录节点值,遍历右边；重复上述过程
+                TreeNode node = stack.pop(); // 弹出栈顶元素
+                list.add(node.val);
+                if (node.right != null) {
+                    cur = node.right;
+                }
+            }
+        }
+        return list;
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
