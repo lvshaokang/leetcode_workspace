@@ -33,23 +33,23 @@
  */
 class Solution {
 
-    private class SFrame {
+    /*private class SFrame {
         private int status;
         private TreeNode node = null;
         public SFrame(int status, TreeNode node) {
             this.status = status;
             this.node = node;
         }
-    }
+    }*/
 
-    List<Integer> result = new ArrayList<>();
+    /*List<Integer> result = new ArrayList<>();*/
 
     /**
      * status=1,表示要扩展左子树,将左子节点入栈
      * status=2,表示左子树扩展完了,要扩展右子树,将右子节点入栈
      * status=3,表示左右子树都扩展完了,出栈
      */
-    public List<Integer> postorderTraversal(TreeNode root) {
+    /*public List<Integer> postorderTraversal(TreeNode root) {
         if (root == null) return result;
 
         Stack<SFrame> stack = new Stack<>();
@@ -75,6 +75,30 @@ class Solution {
             }
         }
         return result;
+    }*/
+
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        if (root == null) return list;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        TreeNode prev = null; // prev 记录
+        while (cur != null || !stack.isEmpty()) {
+            if (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            } else {
+                TreeNode node = stack.pop();
+                if (node.right == null || node.right == prev) { // 右子树为空 或者 右子树已经访问过
+                    list.add(node.val);
+                    prev = node;
+                } else {
+                    stack.push(node);
+                    cur = node.right;
+                }
+            }
+        }
+        return list;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
