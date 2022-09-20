@@ -49,6 +49,8 @@ class Solution {
 // /
 
     /**
+     * 镜像
+     *
      * invert(root) = invert(root.left) + invert(root.right) + root.val
      *  root.right = invert(root.left)
      *  root.left = invert(root.right)

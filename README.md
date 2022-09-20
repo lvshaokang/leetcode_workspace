@@ -12,7 +12,7 @@
 10. [剑指 Offer 22. 链表中倒数第k个节点（简单）](./leetcode/editor/cn/%5B剑指%20Offer%2022%5D链表中倒数第k个节点.java) ✅
 11. [19. 删除链表的倒数第 N 个结点（中等）](./leetcode/editor/cn/%5B19%5D删除链表的倒数第%20N%20个结点.java) ✅
 12. [160. 相交链表（简单）](./leetcode/editor/cn/%5B160%5D相交链表.java) ✅
-13. [141. 环形链表（简单）](./leetcode/editor/cn/%5B141%5D环形链表.java) ✅
+13. [141. 环形链表（简单）](./leetcode/editor/cn/%5B141%5D环形链表.java) ✅快慢指针
 14. [82. 删除排序链表中的重复元素 II（中等）](./leetcode/editor/cn/%5B82%5D删除排序链表中的重复元素%20II.java) ✅
 15. [92. 反转链表 II](./leetcode/editor/cn/%5B92%5D反转链表%20II.java) ✅
 
@@ -26,21 +26,21 @@
 5. [590. N 叉树的后序遍历（简单）]
 
 ### 二叉树按层遍历
-1. [剑指 Offer 32 - I. 从上到下打印二叉树（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2032%20-%20I%5D从上到下打印二叉树.java)
+1. [剑指 Offer 32 - I. 从上到下打印二叉树（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2032%20-%20I%5D从上到下打印二叉树.java) ✅
 2. [102. 二叉树的层序遍历（中等）](./leetcode/editor/cn/%5B102%5D二叉树的层序遍历.java) ✅
-3. [剑指 Offer 32 - III. 从上到下打印二叉树 III（中等）]
+3. [剑指 Offer 32 - III. 从上到下打印二叉树 III（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2032%20-%20III%5D从上到下打印二叉树%20III.java) ✅
 4. [429. N 叉树的层序遍历（中等）]
 5. [513. 找树左下角的值（中等）]
 
 ### 二叉树上的递归
-1. [104. 二叉树的最大深度（简单）](./leetcode/editor/cn/%5B104%5D二叉树的最大深度.java)
+1. [104. 二叉树的最大深度（简单）](./leetcode/editor/cn/%5B104%5D二叉树的最大深度.java) ✅ 递归
 2. [559. N 叉树的最大深度（简单）](./leetcode/editor/cn/%5B559%5DN%20叉树的最大深度.java)
 3. [剑指 Offer 55 - II. 平衡二叉树（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2055%20-%20II%5D平衡二叉树.java)
 4. [617. 合并二叉树（简单）](./leetcode/editor/cn/%5B617%5D合并二叉树.java)
-5. [226. 翻转二叉树（简单）](./leetcode/editor/cn/%5B226%5D翻转二叉树.java)
-6. [101. 对称二叉树（中等）](./leetcode/editor/cn/%5B101%5D对称二叉树.java)
+5. [226. 翻转二叉树（简单）](./leetcode/editor/cn/%5B226%5D翻转二叉树.java) ✅递归
+6. [101. 对称二叉树（中等）](./leetcode/editor/cn/%5B101%5D对称二叉树.java) ✅递归
 7. [98. 验证二叉搜索树（中等）](./leetcode/editor/cn/%5B98%5D验证二叉搜索树.java)
-8. [112. 路径总和（简单）](./leetcode/editor/cn/%5B112%5D路径总和.java)
+8. [112. 路径总和（简单）](./leetcode/editor/cn/%5B112%5D路径总和.java) ✅递归
 
 ### 二叉查找树
 1. [剑指 Offer 54. 二叉搜索树的第k大节点（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2054%5D二叉搜索树的第k大节点.java) 
@@ -49,7 +49,7 @@
 
 ### LCA最近公共祖先
 1. [236. 二叉树的最近公共祖先（中等）](./leetcode/editor/cn/%5B236%5D二叉树的最近公共祖先.java)
-2. [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2068%20-%20I%5D二叉搜索树的最近公共祖先.java)
+2. [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先（中等）](./leetcode/editor/cn/%5B剑指%20Offer%2068%20-%20I%5D二叉搜索树的最近公共祖先.java) ✅
 
 ### 二叉树转单、双、循环链表
 1. [114. 二叉树展开为链表（中等）](./leetcode/editor/cn/%5B114%5D二叉树展开为链表.java)
