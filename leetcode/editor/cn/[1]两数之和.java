@@ -48,7 +48,7 @@ class Solution {
     /**
      * 数对 -> 双指针
      */
-    public int[] twoSum(int[] nums, int target) {
+    /*public int[] twoSum(int[] nums, int target) {
         int n = nums.length;
         int[] sortedNums = new int[n];
         for (int i = 0; i < n; i++) {
@@ -71,9 +71,9 @@ class Solution {
             }
         }
         return new int[0];
-    }
+    }*/
 
-    private int find(int[] nums, boolean[] used, int value) {
+    /*private int find(int[] nums, boolean[] used, int value) {
         int i = 0;
         while (i < nums.length) {
             if (nums[i] == value && used[i] == false) {
@@ -83,6 +83,23 @@ class Solution {
             i++;
         }
         return i;
+    }*/
+
+    /**
+     * hash map
+     * target - nums[i]
+     */
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int num = target - nums[i];
+            if (map.containsKey(num)) {
+                return new int[] {map.get(num), i};
+            } else {
+                map.put(nums[i], i);
+            }
+        }
+        return new int[0];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
